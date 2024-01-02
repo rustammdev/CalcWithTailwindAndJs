@@ -129,39 +129,22 @@ clear.addEventListener('click', (e) => {
 
 
 // keyup
-// let str = ''
-// document.addEventListener('keyup', (e) => {
-//     // console.log(e.key);
+
+// var mathExpression = '';  // matematik ifodani saqlash uchun o'zgaruvchi
+
+// document.addEventListener('keyup', function(e) {
+//     let key = e.key
 //     if(e.key = 'Enter') {
 //         let result = eval(math);
 //         display.textContent = result;
-//         math = result;
+//         math = '';
 //     }
 
-//     // let regex = /[0-9]|\+|\-|\*||\.||\//;
-//     // let st = ''
-//     // if(regex.test(e.key)){
-//     //     st += e.key
-//     // }
-//     // console.log(st);
-//     // console.log(e.key);
-// })
-
-var mathExpression = '';  // matematik ifodani saqlash uchun o'zgaruvchi
-
-document.addEventListener('keyup', function(e) {
-    if(e.key = 'Enter') {
-        let result = eval(math);
-        display.textContent = result;
-        math = result;
-    }
-
-    var key = e.key;  // bosilgan tugma
-    var regex = /[0-9]|\+|\-|\*||\.|\//;  // ruxsat etilgan belgilar
-    console.log(regex.test(key));
-    if (regex.test(key)) {
-        mathExpression += key;  // agar belgi ruxsat etilgan bo'lsa, uni o'zgaruvchiga qo'shish
-        math = mathExpression
-        display.textContent = math
-    }
-});
+//     var regex = /^[0-9_\+\-\*\/\.]$/;
+//     let num = '';
+//     if (regex.test(key)) {
+//         math += key;
+//         // ma12t
+//         console.log(math);
+//     }
+// });
